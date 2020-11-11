@@ -142,7 +142,7 @@ const SignInScreen = ({ navigation }) => {
   };
 
   return (
-    // <TouchableWithoutFeedback onPress={()=> Keyboard.dismiss()}>
+    <TouchableWithoutFeedback onPress={()=> Keyboard.dismiss()}>
     <View style={styles.container}>
       <StatusBar backgroundColor="#009387" barStyle="light-content" />
       <View style={styles.header}>
@@ -234,7 +234,7 @@ const SignInScreen = ({ navigation }) => {
       </Animatable.View>
       {/* <Button title="Click SignInScreen" onPress={()=> navigation.navigate("")} /> */}
     </View>
-    // </TouchableWithoutFeedback>
+    </TouchableWithoutFeedback>
   );
 };
 

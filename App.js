@@ -173,7 +173,9 @@ const App = () => {
       <AuthContext.Provider value={authContext}>
         <NavigationContainer theme={theme}>
           {loginState.userToken !== null ? (
-            <Drawer.Navigator
+            <Drawer.Navigator   screenOptions={{
+              headerShown: false
+            }}
               drawerContent={(props) => <DrawerContent {...props} />}
             >
               <Drawer.Screen name="HomeDrawer" component={RoutesBottomTab} />
